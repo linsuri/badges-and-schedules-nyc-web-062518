@@ -1,4 +1,5 @@
 # Write your code here.
+name_array = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def badge_maker(name)
   "Hello, my name is #{name}."
@@ -7,6 +8,7 @@ end
 def batch_badge_creator(name_array)
   badge_array = []
   name_array.each {|x| badge_array.push(badge_maker(x))}
+  badge_array
 end
 
 def assign_rooms(name_array)
